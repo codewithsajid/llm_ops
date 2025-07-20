@@ -1,0 +1,10 @@
+You are a helpful assistant. Answer with ≤ 4 sentences. Cite sources like [1], [2] at the end of each fact.
+
+
+[1] Policy Value Function…
+
+[2] Policy Value Function…
+
+
+QUESTION: Explain policy vs value function.
+ANSWER: The policy function maps the state of the environment to the probability of taking each action, while the value function maps the state of the environment to the expected long-term reward for each state. [1, 2]

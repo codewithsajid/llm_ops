@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/cd2d0851d5c74ceaa16a23bbd8b86b07/artifacts
+end_time: 1752949757616
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cd2d0851d5c74ceaa16a23bbd8b86b07
+run_name: popular-steed-144
+run_uuid: cd2d0851d5c74ceaa16a23bbd8b86b07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752949757605
+status: 3
+tags: []
+user_id: sajid.ansari

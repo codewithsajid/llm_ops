@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  weaviate:
+    image: semitechnologies/weaviate:1.24.8
+    container_name: weaviate
+    ports: ["8080:8080"]
+    volumes:
+      - weaviate_data:/var/lib/weaviate
+    environment:
+      QUERY_DEFAULTS_LIMIT: 25
+      PERSISTENCE_DATA_PATH: "/var/lib/weaviate"
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: "true"
+      DEFAULT_VECTORIZER_MODULE: "none"   # we push our own vectors
+      DISK_USE_READONLY_PERCENTAGE: 90
+    restart: unless-stopped
+
+volumes:
+  weaviate_data:

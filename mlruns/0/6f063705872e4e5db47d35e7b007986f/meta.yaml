@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/6f063705872e4e5db47d35e7b007986f/artifacts
+end_time: 1752945777735
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6f063705872e4e5db47d35e7b007986f
+run_name: treasured-foal-998
+run_uuid: 6f063705872e4e5db47d35e7b007986f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752945777726
+status: 3
+tags: []
+user_id: sajid.ansari

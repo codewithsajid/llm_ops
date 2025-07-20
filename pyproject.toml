@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm_ops"
+version = "0.0.1"
+description = "Sprint-0 docs-MCP + Weaviate playground"
+requires-python = ">=3.9"
+dependencies = [
+  "fastapi>=0.110,<0.112",
+  "uvicorn[standard]>=0.28,<0.30",
+  "weaviate-client>=4.5,<5.0",
+  "python-multipart",
+  "mlflow>=2.12,<3.0",
+  "sentence-transformers>=2.4,<2.6",
+  "pypdf2>=3.0,<4.0",
+  "pydantic-settings>=2.1,<3.0",
+  "markdown-it-py>=3.0,<4.0",
+  "beautifulsoup4>=4.12,<5.0",
+  "tiktoken>=0.6,<0.7",
+  "torch==2.3.0",
+  "torchvision==0.18.0",
+  "timm==0.9.12",
+  "transformers==4.53.2",
+  "accelerate>=0.25,<0.30",
+  "sentencepiece~=0.2",           # Gemma tokenizer
+  "jinja2>=3.1,<3.2",
+  "unstructured[pdf,pptx,docx,msg]==0.18.9",
+  "pymupdf>=1.23",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["llm_ops*"]

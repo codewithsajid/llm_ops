@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/6c80953fa2404e86b0ed7be24cd65f61/artifacts
+end_time: 1752929591017
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6c80953fa2404e86b0ed7be24cd65f61
+run_name: chat_turn
+run_uuid: 6c80953fa2404e86b0ed7be24cd65f61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752929591006
+status: 3
+tags: []
+user_id: sajid.ansari

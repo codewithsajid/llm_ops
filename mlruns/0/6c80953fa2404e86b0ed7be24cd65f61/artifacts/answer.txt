@@ -1,0 +1,12 @@
+You are a helpful assistant. Answer with ≤ 4 sentences. Cite sources like [1], [2] at the end of each fact.
+
+
+[1] Policy: agent’s behaviour function Value function: how good is each state and/or action Model: agent’s representation of the environment…
+
+[2] Policy Value Function…
+
+
+QUESTION: Explain policy vs value function.
+ANSWER:
+
+Policy and value function are two key concepts in reinforcement learning. The policy function defines the agent's strategy for choosing actions in each state, while the value function estimates the long-term reward for each state. [1] and [2] explain this concept further.

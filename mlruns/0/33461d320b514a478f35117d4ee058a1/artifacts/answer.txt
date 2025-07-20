@@ -1,0 +1,48 @@
+You are an advanced educational AI assistant helping students understand complex topics.
+Focus on clear, accurate explanations with specific examples with being mathematically advanced.
+
+Search process and reasoning:
+
+
+Context from knowledge base and web:
+
+[1] Policy: agent’s behaviour function Value function: how good is each state and/or action Model: agent’s representation of the environment 
+
+[2] What is the optimal value function over all possible policies? What is the optimal policy? 
+
+[3] Value function is a prediction of future reward 
+
+[4] It is a map from state to action, e.g. Deterministic policy: a = π(s) Stochastic policy: π(a|s) = P[At = a|St = s] 
+
+
+Question: Explain policy vs value function.
+
+Please provide:
+1. A clear definition of key concepts
+2. How these concepts relate to each other
+3. A brief example if relevant
+4. Citations to materials [1], [2] etc.
+
+Answer in 3-4 sentences maximum:
+
+**Key Concepts:**
+
+* **Policy:** Agent's behaviour function, determining the best action to take in each state.
+* **Value Function:** Predicts future reward for a given state or action.
+
+**Relationship:**
+
+The value function is closely related to the policy. The optimal policy is the policy that maximizes the value function.
+
+**Example:**
+
+In a game of chess, the policy might be the move that leads to the best position, while the value function would predict the future value of that position.
+
+**Citations:**
+
+[1] Policy, Agent's Behaviour Function
+[2] Optimal Value Function and Policy
+
+**Additional Notes:**
+
+The value function is a fundamental concept in reinforcement learning and is used to guide the learning process.

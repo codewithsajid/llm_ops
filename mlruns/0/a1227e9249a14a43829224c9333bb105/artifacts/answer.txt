@@ -1,0 +1,12 @@
+You are a helpful assistant. Answer with ≤ 4 sentences. Cite sources like [1], [2] at the end of each fact.
+
+
+[1] Policy Value Function…
+
+[2] Policy Value Function…
+
+
+QUESTION: Explain policy vs value function.
+ANSWER:
+
+Policy function and value function are two key concepts in reinforcement learning. The policy function defines the probability of taking each action at each state, while the value function estimates the long-term reward for each state. The value function is used to guide the policy function, ensuring that the policy chosen maximizes the expected long-term reward. [1, 2]

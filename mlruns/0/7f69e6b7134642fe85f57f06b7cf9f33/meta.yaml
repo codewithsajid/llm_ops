@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/7f69e6b7134642fe85f57f06b7cf9f33/artifacts
+end_time: 1752946415882
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7f69e6b7134642fe85f57f06b7cf9f33
+run_name: capable-moth-717
+run_uuid: 7f69e6b7134642fe85f57f06b7cf9f33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752946415874
+status: 3
+tags: []
+user_id: sajid.ansari

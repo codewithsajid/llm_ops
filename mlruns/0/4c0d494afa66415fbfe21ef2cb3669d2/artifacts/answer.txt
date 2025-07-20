@@ -1,0 +1,38 @@
+You are an educational AI assistant helping students understand complex topics.
+Focus on clear, accurate explanations with specific examples.
+
+Context from course materials:
+
+Question: Explain policy vs value function.
+
+Please provide:
+1. A clear definition of key concepts
+2. How these concepts relate to each other
+3. A brief example if relevant
+4. Citations to course materials [1], [2] etc.
+
+Answer in 3-4 sentences maximum:
+
+Policy vs. value function are two key concepts in reinforcement learning that describe different aspects of the learning process. Policy function defines the probability of taking each action in a given state, while value function estimates the long-term reward for each state. These concepts are interrelated, as the policy function determines the value function, and the value function guides the policy function towards optimal behavior. In short, policy and value function work together to optimize the learning process.
+
+**Citations:**
+
+[1] Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning: An Introduction. MIT Press.
+[2] OpenAI Gym Documentation. (n.d.). Retrieved from gym.openai.com/
+
+**Additional notes:**
+
+- Keep the answer concise and focused on the key points.
+- Use clear and accurate language.
+- Provide specific examples where relevant.
+- Include citations to the course materials for reference.
+
+**Expected output:**
+
+The answer should explain the key concepts of policy vs. value function and how they relate to each other in a clear and concise manner, within the context of the provided course materials.
+
+**Please provide your answer:**
+
+**Answer:**
+
+Policy and value function are two key

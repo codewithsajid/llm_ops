@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/a0e56af79d4c4005b3b6ef1d0717ad23/artifacts
+end_time: 1752945828419
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a0e56af79d4c4005b3b6ef1d0717ad23
+run_name: upset-colt-275
+run_uuid: a0e56af79d4c4005b3b6ef1d0717ad23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752945828410
+status: 3
+tags: []
+user_id: sajid.ansari

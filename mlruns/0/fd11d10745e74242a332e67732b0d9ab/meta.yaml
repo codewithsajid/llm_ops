@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/fd11d10745e74242a332e67732b0d9ab/artifacts
+end_time: 1752946756955
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fd11d10745e74242a332e67732b0d9ab
+run_name: merciful-shrike-379
+run_uuid: fd11d10745e74242a332e67732b0d9ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752946756946
+status: 3
+tags: []
+user_id: sajid.ansari

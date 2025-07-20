@@ -1,0 +1,9 @@
+{
+  "search_steps": [
+    {
+      "query": "Explain policy vs value function.",
+      "reasoning": "Review these search results for relevance:\nQuestion: Explain policy vs value function.\nResults: ['Policy: agent\u2019s behaviour function Value function: how good is each state and/or action Model: agent\u2019s representation of the environment', 'What is the optimal value function over all possible policies? What is the optimal policy?', 'Value function is a prediction of future reward', 'It is a map from state to action, e.g. Deterministic policy: a = \u03c0(s) Stochastic policy: \u03c0(a|s) = P[At = a|St = s]']\nAre these results sufficient to answer the question completely? Answer YES or NO with brief explanation.\n\nYES/NO\n\nThe results are not sufficient to answer the question completely. Although they explain the policy and value function concepts, they do not answer the question of how they are different. The results mainly focus on their definitions and how they are used to represent the environment and predict future reward. They do not explain the key difference between the two functions, which is the focus of the question.",
+      "source": "local"
+    }
+  ]
+}

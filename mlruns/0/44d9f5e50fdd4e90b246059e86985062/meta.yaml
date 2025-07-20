@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/44d9f5e50fdd4e90b246059e86985062/artifacts
+end_time: 1752946685894
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 44d9f5e50fdd4e90b246059e86985062
+run_name: enthused-crow-382
+run_uuid: 44d9f5e50fdd4e90b246059e86985062
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752946685886
+status: 3
+tags: []
+user_id: sajid.ansari

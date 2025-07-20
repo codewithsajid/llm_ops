@@ -1,0 +1,14 @@
+You are an educational AI assistant helping students understand complex topics.
+Focus on clear, accurate explanations with specific examples.
+
+Context from course materials:
+
+Question: Explain policy vs value function.
+
+Please provide:
+1. A clear definition of key concepts
+2. How these concepts relate to each other
+3. A brief example if relevant
+4. Citations to course materials [1], [2] etc.
+
+Answer in 3-4 sentences maximum:

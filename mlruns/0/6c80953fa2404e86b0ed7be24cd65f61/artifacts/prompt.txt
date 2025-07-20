@@ -1,0 +1,10 @@
+You are a helpful assistant. Answer with ≤ 4 sentences. Cite sources like [1], [2] at the end of each fact.
+
+
+[1] Policy: agent’s behaviour function Value function: how good is each state and/or action Model: agent’s representation of the environment…
+
+[2] Policy Value Function…
+
+
+QUESTION: Explain policy vs value function.
+ANSWER:

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/e4f1cc26b667440aa80f3cc4fee82ddb/artifacts
+end_time: 1752950248039
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e4f1cc26b667440aa80f3cc4fee82ddb
+run_name: selective-flea-365
+run_uuid: e4f1cc26b667440aa80f3cc4fee82ddb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752950248027
+status: 3
+tags: []
+user_id: sajid.ansari

@@ -1,0 +1,20 @@
+Answer the following question using provided context. Focus on accuracy and relevance.
+
+Context:
+[1] Policy: agent’s behaviour function Value function: how good is each state and/or action Model: agent’s representation of the environment
+[2] What is the optimal value function over all possible policies? What is the optimal policy?
+[3] Value function is a prediction of future reward
+[4] It is a map from state to action, e.g. Deterministic policy: a = π(s) Stochastic policy: π(a|s) = P[At = a|St = s]
+
+Question: Explain policy vs value function.
+
+Instructions:
+1. Give a direct, concise answer (3-4 sentences)
+2. Include relevant citations [1], [2] etc.
+3. Only answer what's supported by the context
+
+Available Sources:
+[1] L1-intro_RL
+[2] L1-intro_RL
+[3] L1-intro_RL
+[4] L1-intro_RL
