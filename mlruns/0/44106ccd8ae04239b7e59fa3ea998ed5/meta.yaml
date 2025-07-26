@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/44106ccd8ae04239b7e59fa3ea998ed5/artifacts
+end_time: 1753011775205
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 44106ccd8ae04239b7e59fa3ea998ed5
+run_name: youthful-fly-585
+run_uuid: 44106ccd8ae04239b7e59fa3ea998ed5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753011775196
+status: 3
+tags: []
+user_id: sajid.ansari

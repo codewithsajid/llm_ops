@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/699f0bc2c9fd471da324060cde75d8a4/artifacts
+end_time: 1753262958426
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 699f0bc2c9fd471da324060cde75d8a4
+run_name: thundering-lark-728
+run_uuid: 699f0bc2c9fd471da324060cde75d8a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753262958416
+status: 3
+tags: []
+user_id: sajid.ansari

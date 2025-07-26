@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/8f89a390d9944f36bdbc603da8418f04/artifacts
+end_time: 1753262058296
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8f89a390d9944f36bdbc603da8418f04
+run_name: wistful-midge-521
+run_uuid: 8f89a390d9944f36bdbc603da8418f04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753262058288
+status: 3
+tags: []
+user_id: sajid.ansari

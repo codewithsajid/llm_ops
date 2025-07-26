@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/30830c787318457c99599aa1692c3bd1/artifacts
+end_time: 1753075056002
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 30830c787318457c99599aa1692c3bd1
+run_name: caring-cod-355
+run_uuid: 30830c787318457c99599aa1692c3bd1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753075055996
+status: 4
+tags: []
+user_id: sajid.ansari

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/164264bd843f4284bb84050188d789ef/artifacts
+end_time: 1753190621733
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 164264bd843f4284bb84050188d789ef
+run_name: rogue-yak-77
+run_uuid: 164264bd843f4284bb84050188d789ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753190621724
+status: 3
+tags: []
+user_id: sajid.ansari

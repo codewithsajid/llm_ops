@@ -1,0 +1,53 @@
+
+### Task
+Answer the following question based on the provided context. Your answer should be concise (3-4 sentences) and directly address the user's query.
+
+### Guidelines
+1. Synthesize information from the provided sources.
+2. Prioritize information from 'web' sources as they are likely more current.
+3. Cite the sources you use with bracketed numbers, e.g., [1], [2].
+4. If the context is insufficient to answer the question, state that you cannot provide a definitive answer.
+
+### Context
+
+[1] (Source: web) AIFI - Latest Developments of Natural Language Processing and Reinforcement Learning in Finance
+The Artificial Intelligence Finance Institute (AIFI) discusses the latest developments of Natural language Processing & Reinforcement learning in Finance with AIFI founder Professor Miquel Noguer i Alonso & AIFI faculty member Professor Matthew Dixon. Professor Miquel Noguer i Alonso presents: FinEAS: Financial Embedding Analysis of Sentiment. Slides: https://www.wbstraining.com/wp-content/uploads/2022/01/Natural-language-Processing-Reinforcement-learning-in-Finance-Alonso.pdf Professor Matthew Dixon presents: Bayesian reinforcement learning for wealth management. Slides: https://www.wbstraining.com/wp-content/uploads/2022/01/Natural-language-Processing-Reinforcement-learning-in-Finance-Dixon.pdf For more information on the AIFI please visit: https://www.aifinanceinstitute.com/
+The Artificial Intelligence Finance Institute (AIFI) discusses the latest developments of Natural language Processing & Reinforcement learning in Finance with AIFI founder Professor Miquel Noguer i Alonso & AIFI faculty member Professor Matthew Dixon. Professor Miquel Noguer i Alonso presents: FinEAS: Financial Embedding Analysis of Sentiment. Slides: https://www.wbstraining.com/wp-content/uploads/2022/01/Natural-language-Processing-Reinforcement-learning-in-Finance-Alonso.pdf Professor Matthew Dixon presents: Bayesian reinforcement learning for wealth management. Slides: https://www.wbstraining.com/wp-content/uploads/2022/01/Natural-language-Processing-Reinforcement-learning-in-Finance-Dixon.pdf For more information on the AIFI please visit: https://www.aifinanceinstitute.com/
+
+[2] (Source: web) SitemapReinforcement Learning Newsletter
+Feb 24, 2022
+Feb 2, 2022
+Dec 22, 2021
+Dec 7, 2021
+Nov 19, 2021
+A newsletter by RL Agent
+Your RL Agent distills the latest and most important in reinforcement learning for you.
+By signing up, you will create a Medium account if you don’t already have one. Review our Privacy Policy for more information about our privacy practices.
+Medium sent you an email at to complete your subscription.
+Sent by Reinforcement Learning Newsletter
+
+[3] (Source: web) Boston Dynamics and the Robotics & AI Institute (formerly The AI Institute) have formed a partnership to advance humanoid robots through reinforcement learning.
+Together, the two organizations will establish a shared reinforcement learning training pipeline for the new electric Atlas robot to build dynamic and generalizable mobile manipulation behavior.
+The work, which kicked off this month, brings together two of the industry’s leading research teams to advance robot technology and to produce new capabilities on Atlas.
+The partnership expands upon previous collaborations between Boston Dynamics and the Robotics & AI Institute (RAI Institute), including joint development work on Spot’s Reinforcement Learning Researcher Kit.
+Released last year, the kit trains unique behavior and modes of locomotion on the quadruped, and was used to achieve record running speeds of 11.5 mph (5.2 m/s).
+This collaboration builds upon that work, with a new focus on humanoid robots. The project has several objectives:
+- Develop sim-to-real for mobility: Despite advances in fast parallel simulators and sophisticated policy optimization techniques, transferring simulation results to real robotic hardware remains one of the most challenging aspects of applying reinforcement learning in robotics. To bridge the sim-to-reality gap, the teams will collaborate to train policies that generate a variety of agile behavior on physical hardware to achieve novel, robust and practical locomotion behavior.
+- Improve whole body loco-manipulation: A robot’s capability to manipulate objects and fixtures, such as doors and levers, in conjunction with locomotion would significantly enhance its utility. The team will explore developing new policies to improve robustness in these scenarios.
+- Explore full-body contact strategies: This work will explore high-performance, whole-body locomotion and tasks that require full-body contact strategies, such as dynamic running and full-body manipulation of heavy objects,
+
+[4] (Source: kb) Reinforcement learning is based on the reward hypothesis
+
+[5] (Source: kb) Reinforcement learning is like trial-and-error learning
+
+[6] (Source: kb) Reinforcement LearningSupervised LearningUnsupervised LearningMachineLearning
+
+[7] (Source: kb) What makes reinforcement learning diﬀerent from other machine learning paradigms?
+
+[8] (Source: kb) i.e. it is the information used by reinforcement learning algorithms
+
+
+### Question
+What are the latest developments in RL?
+
+### Answer

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/439e23af5a6644b1a61144b6d763da71/artifacts
+end_time: 1753371775137
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 439e23af5a6644b1a61144b6d763da71
+run_name: fearless-grouse-280
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753371775113
+status: 3
+tags: []
+user_id: sajid.ansari

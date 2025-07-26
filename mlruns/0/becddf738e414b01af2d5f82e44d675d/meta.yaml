@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/becddf738e414b01af2d5f82e44d675d/artifacts
+end_time: 1753262518733
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: becddf738e414b01af2d5f82e44d675d
+run_name: tasteful-eel-238
+run_uuid: becddf738e414b01af2d5f82e44d675d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753262518724
+status: 3
+tags: []
+user_id: sajid.ansari

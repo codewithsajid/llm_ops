@@ -1,0 +1,84 @@
+
+### Task
+Answer the following question using ONLY the following web-retrieved snippets.  
+Do NOT add or infer any information not present in these snippets.  
+Cite every statement by appending [n], matching the snippet index.
+
+### Context
+
+[1] 2025 as an year has been home to several breakthroughs when it comes to large language models (LLMs). The technology has found a home in almost every domain imaginable and is increasingly being integrated into conventional workflows. With so much happening around, it’s a tall order to keep track of significant findings. This article would help acquaint you with the most popular LLM research papers that’ve come out this year. This would help you stay up-to-date with the latest breakthroughs in AI.
+The research papers have been obtained from Hugging Face, an online platform for AI-related content. The metric used for selection is the upvotes parameter on Hugging Face. The following are 10 of the most well-received research study papers of 2025:
+Category: Natural Language Processing
+Mutarjim is a compact yet powerful 1.5B parameter language model for bidirectional Arabic-English translation, based on Kuwain-1.5B, that achieves state-of-the-art performance against significantly larger models and introduces the Tarjama-25 benchmark.
+Objectives: The main objective is to develop an efficient and accurate language model optimized for bidirectional Arabic-English translation. It addresses limitations of current LLMs in this domain and introduces a robust benchmark for evaluation.
+Outcome:
+Full Paper: https://arxiv.org/abs/2505.17894
+Category: Natural Language Processing
+This technical report introduces Qwen3, a new series of LLMs featuring integrated thinking and non-thinking modes, diverse model sizes, enhanced multilingual capabilities, and state-of-the-art performance across various benchmarks.
+Objective: The primary objective of the paper is to introduce the Qwen3 LLM series, designed to enhance performance, efficiency, and multilingual capabilities, notably by integrating flexible thinking and non-thinking modes and optimizing resource usage for diverse tasks.
+Outcome:
+Full Paper: https://arxiv.org/abs/2505.09388
+Category: Multi-Modal
+This paper provides a comprehensive survey of large multimodal reasoning models (LMRMs), outlining a four-stage developmental roadmap for multimodal reasoning research.
+Objective: The main objective is to clarify the current landscape of multimodal reasoning and inform the design of next-generation multimodal reasoning systems capable of comprehensive perception, precise understanding, and deep reasoning in diverse environments.
+Outcome: The survey’s experimental findings highlight current LMRM limitations in the Audio-Video Question Answering (AVQA) task. Additionally, GPT-4o scores 0.6% on the BrowseComp benchmark, improving to 1.9% with browsing tools, demonstrating weak tool-interactive planning.
+Full Paper: https://arxiv.org/abs/2505.04921
+Category: Reinforcement Learning
+This paper introduces Absolute Zero, a novel Reinforcement Learning with Verifiable Rewards (RLVR) paradigm. It enables language models to autonomously generate and solve reasoning tasks, achieving self-improvement without relying on external huma
+
+[2] LLM Research Papers: The 2025 List (January to June)
+A topic-organized collection of 200+ LLM research papers from 2025
+As some of you know, I keep a running list of research papers I (want to) read and reference.
+About six months ago, I shared my 2024 list, which many readers found useful. So, I was thinking about doing this again. However, this time, I am incorporating that one piece of feedback kept coming up: "Can you organize the papers by topic instead of date?"
+The categories I came up with are:
+Reasoning Models
+- 1a. Training Reasoning Models
+- 1b. Inference-Time Reasoning Strategies
+- 1c. Evaluating LLMs and/or Understanding Reasoning
+Other Reinforcement Learning Methods for LLMs
+Other Inference-Time Scaling Methods
+Efficient Training & Architectures
+Diffusion-Based Language Models
+Multimodal & Vision-Language Models
+Data & Pre-training Datasets
+Also, as LLM research continues to be shared at a rapid pace, I have decided to break the list into bi-yearly updates. This way, the list stays digestible, timely, and hopefully useful for anyone looking for solid summer reading material.
+Please note that this is just a curated list for now. In future articles, I plan to revisit and discuss some of the more interesting or impactful papers in larger topic-specific write-ups. Stay tuned!
+Announcement:
+It's summer! And that means internship season, tech interviews, and lots of learning.
+To support those brushing up on intermediate to advanced machine learning and AI topics, I have made all 30 chapters of my Machine Learning Q and AI book freely available for the summer:
+🔗 https://sebastianraschka.com/books/ml-q-and-ai/#table-of-contents
+Whether you are just curious and want to learn something new or prepping for interviews, hopefully this comes in handy.
+Happy reading, and best of luck if you are interviewing!
+1. Reasoning Models
+This year, my list is very reasoning model-heavy. So, I decided to subdivide it into 3 categories: Training, inference-time scaling, and more general understanding/evaluation.
+1a. Training Reasoning Models
+This subsection focuses on training strategies specifically designed to improve reasoning abilities in LLMs. As you may see, much of the recent progress has centered around reinforcement learning (with verifiable rewards), which I covered in more detail in a previous article.
+8 Jan, Towards System 2 Reasoning in LLMs: Learning How to Think With Meta Chain-of-Thought, https://arxiv.org/abs/2501.04682
+13 Jan, The Lessons of Developing Process Reward Models in Mathematical Reasoning, https://arxiv.org/abs/2501.07301
+16 Jan, Towards Large Reasoning Models: A Survey of Reinforced Reasoning with Large Language Models, https://arxiv.org/abs/2501.09686
+20 Jan, Reasoning Language Models: A Blueprint, https://arxiv.org/abs/2501.11223
+22 Jan, Kimi k1.5: Scaling Reinforcement Learning with LLMs, https://arxiv.org/abs//2501.12599
+22 Jan, DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning, https://arxiv.
+
+[3] 27 of the best large language models in 2025
+Large language models have been affecting search for years and have been brought to the forefront by ChatGPT and other chatbots.
+Large language models are the dynamite behind the generative AI boom. However, they've been around for a while.
+LLMs are black box AI systems that use deep learning on extremely large datasets to understand and generate new text. Modern LLMs began taking shape in 2014 when the attention mechanism -- a machine learning technique designed to mimic human cognitive attention -- was introduced in a research paper titled "Neural Machine Translation by Jointly Learning to Align and Translate." In 2017, that attention mechanism was honed with the introduction of the transformer model in another paper, "Attention Is All You Need."
+Some of the most well-known language models today are based on the transformer model, including the generative pre-trained transformer series of LLMs and bidirectional encoder representations from transformers (BERT).
+ChatGPT, which runs on a set of language models from OpenAI, attracted more than 100 million users just two months after its release in 2022. Since then, many competing models have been released. Some belong to big companies such as Google, Amazon and Microsoft; others are open source.
+Constant developments in the field can be difficult to keep track of. Here are some of the most influential models, both past and present. Included in it are models that paved the way for today's leaders as well as those that could have a significant effect in the future.
+This article is part of
+What is GenAI? Generative AI explained
+Top current LLMs
+Below are some of the most relevant large language models today. They do natural language processing and influence the architecture of future models.
+BERT
+BERT is a family of LLMs that Google introduced in 2018. BERT is a transformer-based model that can convert sequences of data to other sequences of data. BERT's architecture is a stack of transformer encoders and features 342 million parameters. BERT was pre-trained on a large corpus of data then fine-tuned to perform specific tasks along with natural language inference and sentence text similarity. It was used to improve query understanding in the 2019 iteration of Google search.
+Claude
+The Claude LLM focuses on constitutional AI, which shapes AI outputs guided by a set of principles that aim to make the AI assistant it powers helpful, harmless and accurate. Claude was created by the company Anthropic. Claude's latest iterations understand nuance, humor and complex instructions better than earlier versions of the LLM. They also have broad programming capabilities that make them well-suited for application development.
+There are three primary branches of Claude -- Opus, Haiku and Sonnet. The Claude Sonnet 4 and Claude Opus 4 models debuted in early 2025. Opus 4, the premium model, can perform long-running tasks and agentic workflows. Sonnet 4, the efficiency-focuse
+
+
+### Question
+What are the latest developments in LLMs?
+
+### Answer

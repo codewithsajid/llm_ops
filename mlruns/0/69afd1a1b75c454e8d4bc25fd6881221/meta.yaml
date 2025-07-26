@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/69afd1a1b75c454e8d4bc25fd6881221/artifacts
+end_time: 1753280234401
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 69afd1a1b75c454e8d4bc25fd6881221
+run_name: trusting-doe-282
+run_uuid: 69afd1a1b75c454e8d4bc25fd6881221
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753280234392
+status: 3
+tags: []
+user_id: sajid.ansari

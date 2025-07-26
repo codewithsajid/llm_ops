@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/d1b613d15a14433db2c24dd39b5e74c6/artifacts
+end_time: 1753192852188
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d1b613d15a14433db2c24dd39b5e74c6
+run_name: grandiose-hound-621
+run_uuid: d1b613d15a14433db2c24dd39b5e74c6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753192852179
+status: 3
+tags: []
+user_id: sajid.ansari

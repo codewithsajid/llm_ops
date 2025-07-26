@@ -1,0 +1,33 @@
+
+### Task
+Answer the following question based on the provided context. Your answer should be concise (3-4 sentences) and directly address the user's query.
+
+### Guidelines
+1. Synthesize information from the provided sources.
+2. Prioritize information from 'web' sources as they are likely more current.
+3. Cite the sources you use with bracketed numbers, e.g., [1], [2].
+4. If the context is insufficient to answer the question, state that you cannot provide a definitive answer.
+
+### Context
+
+[1] (Source: kb) Reinforcement learning is based on the reward hypothesis
+
+[2] (Source: kb) Reinforcement learning is like trial-and-error learning
+
+[3] (Source: kb) Reinforcement LearningSupervised LearningUnsupervised LearningMachineLearning
+
+[4] (Source: kb) What makes reinforcement learning diﬀerent from other machine learning paradigms?
+
+[5] (Source: kb) i.e. it is the information used by reinforcement learning algorithms
+
+[6] (Source: kb) A model of the environment is known The agent performs computations with its model (without any external interaction) The agent improves its policy a.k.a. deliberation, reasoning, introspection, pondering, thought, search
+
+[7] (Source: kb) What if agent state = complete sequence?
+
+[8] (Source: kb) A: 3 RL questions B: 3 kernels questions Answer any 3 questions
+
+
+### Question
+What are the latest developments in RL?
+
+### Answer

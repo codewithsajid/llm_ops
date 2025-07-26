@@ -1,6 +1,7 @@
 # llm_ops/embedders.py
 from sentence_transformers import SentenceTransformer
 from open_clip import create_model_and_transforms
+import torch
 
 class TextEmbedder:
     _model = SentenceTransformer("intfloat/e5-base-v2", device="cuda:0")

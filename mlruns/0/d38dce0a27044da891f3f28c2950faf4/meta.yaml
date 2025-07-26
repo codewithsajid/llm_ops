@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/d38dce0a27044da891f3f28c2950faf4/artifacts
+end_time: 1753370452009
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d38dce0a27044da891f3f28c2950faf4
+run_name: clean-chimp-581
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753370451997
+status: 3
+tags: []
+user_id: sajid.ansari

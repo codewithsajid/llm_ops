@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/641e24c0c3ea40bfb7ba08ad6733d187/artifacts
+end_time: 1753282013960
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 641e24c0c3ea40bfb7ba08ad6733d187
+run_name: painted-donkey-42
+run_uuid: 641e24c0c3ea40bfb7ba08ad6733d187
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753282013949
+status: 3
+tags: []
+user_id: sajid.ansari

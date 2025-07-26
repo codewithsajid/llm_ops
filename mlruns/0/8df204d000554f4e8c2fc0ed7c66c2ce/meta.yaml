@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/8df204d000554f4e8c2fc0ed7c66c2ce/artifacts
+end_time: 1753377122213
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8df204d000554f4e8c2fc0ed7c66c2ce
+run_name: charming-loon-822
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753377122186
+status: 3
+tags: []
+user_id: sajid.ansari

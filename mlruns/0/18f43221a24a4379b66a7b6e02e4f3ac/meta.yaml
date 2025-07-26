@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/18f43221a24a4379b66a7b6e02e4f3ac/artifacts
+end_time: 1753378294387
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 18f43221a24a4379b66a7b6e02e4f3ac
+run_name: beautiful-hare-679
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753378294365
+status: 3
+tags: []
+user_id: sajid.ansari

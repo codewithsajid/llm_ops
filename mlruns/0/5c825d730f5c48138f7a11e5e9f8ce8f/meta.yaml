@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/5c825d730f5c48138f7a11e5e9f8ce8f/artifacts
+end_time: 1753278750325
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5c825d730f5c48138f7a11e5e9f8ce8f
+run_name: burly-mole-825
+run_uuid: 5c825d730f5c48138f7a11e5e9f8ce8f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753278750316
+status: 3
+tags: []
+user_id: sajid.ansari

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/d052d5b7a6ad4de38dadab865954d035/artifacts
+end_time: 1753364557327
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d052d5b7a6ad4de38dadab865954d035
+run_name: sprint0_ingest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753364540992
+status: 3
+tags: []
+user_id: sajid.ansari

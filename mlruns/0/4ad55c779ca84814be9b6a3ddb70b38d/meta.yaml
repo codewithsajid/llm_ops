@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/4ad55c779ca84814be9b6a3ddb70b38d/artifacts
+end_time: 1753367491264
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4ad55c779ca84814be9b6a3ddb70b38d
+run_name: angry-doe-56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753367491253
+status: 3
+tags: []
+user_id: sajid.ansari

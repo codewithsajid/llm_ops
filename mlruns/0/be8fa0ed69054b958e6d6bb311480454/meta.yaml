@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/be8fa0ed69054b958e6d6bb311480454/artifacts
+end_time: 1753102994692
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: be8fa0ed69054b958e6d6bb311480454
+run_name: colorful-auk-548
+run_uuid: be8fa0ed69054b958e6d6bb311480454
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753102994683
+status: 4
+tags: []
+user_id: sajid.ansari

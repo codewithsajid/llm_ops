@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/65aaea26024f4554b5e1fe5b1cd27a21/artifacts
+end_time: 1753263939716
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 65aaea26024f4554b5e1fe5b1cd27a21
+run_name: popular-stoat-347
+run_uuid: 65aaea26024f4554b5e1fe5b1cd27a21
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753263939707
+status: 3
+tags: []
+user_id: sajid.ansari

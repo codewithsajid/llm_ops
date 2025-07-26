@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/d8ddc46397b446a1862261e8385b5e98/artifacts
+end_time: 1753338787281
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d8ddc46397b446a1862261e8385b5e98
+run_name: languid-hound-725
+run_uuid: d8ddc46397b446a1862261e8385b5e98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753338787269
+status: 3
+tags: []
+user_id: sajid.ansari

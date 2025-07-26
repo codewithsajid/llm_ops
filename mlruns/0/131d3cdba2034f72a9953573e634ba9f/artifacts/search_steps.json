@@ -1,0 +1,14 @@
+[
+  {
+    "source": "local",
+    "confidence": 0.6,
+    "sufficient": false,
+    "query": "What are the latest developments in RL?"
+  },
+  {
+    "source": "web",
+    "confidence": 0.85,
+    "sufficient": true,
+    "query": "What are the latest developments in RL?"
+  }
+]

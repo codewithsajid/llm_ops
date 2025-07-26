@@ -1,0 +1,2 @@
+
+The latest developments in reinforcement learning include sim-to-real transfer, improved whole-body loco-manipulation capabilities, and exploration of full-body contact strategies. These developments are being driven by advancements in reinforcement learning algorithms and the growing availability of powerful hardware platforms.

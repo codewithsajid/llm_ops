@@ -1,0 +1,34 @@
+
+### Task
+Answer the following question based on the provided context. Your answer should be concise (3-4 sentences) and directly address the user's query.
+
+### Guidelines
+1. Synthesize information from the provided sources.
+2. Prioritize information from 'web' sources as they are likely more current.
+3. Cite the sources you use with bracketed numbers, e.g., [1], [2].
+4. If the context is insufficient to answer the question, state that you cannot provide a definitive answer.
+
+### Context
+
+[1] (Source: kb) What makes reinforcement learning diﬀerent from other machine learning paradigms?
+
+[2] (Source: kb) R predicts the next (immediate) reward, e.g.
+
+[3] (Source: kb) A model of the environment is known The agent performs computations with its model (without any external interaction) The agent improves its policy a.k.a. deliberation, reasoning, introspection, pondering, thought, search
+
+[4] (Source: kb) i.e. all observable variables up to time t i.e. the sensorimotor stream of a robot or embodied agent What happens next depends on the history:
+
+[5] (Source: kb) Prediction: evaluate the future
+
+[6] (Source: kb) Dynamics: how actions change the state
+
+[7] (Source: kb) What if agent state = complete sequence?
+
+[8] (Source: kb) A model predicts what the environment will do next
+
+
+### Question
+What are the latest developments in RL?
+
+### Answer
+The provided text does not contain information about the latest developments in RL, therefore I cannot provide a definitive answer to this question.

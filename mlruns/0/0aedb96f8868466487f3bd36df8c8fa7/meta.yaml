@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/0aedb96f8868466487f3bd36df8c8fa7/artifacts
+end_time: 1753371631630
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0aedb96f8868466487f3bd36df8c8fa7
+run_name: overjoyed-hound-665
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753371631605
+status: 3
+tags: []
+user_id: sajid.ansari

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/d11777c6686a476e85d6d8db8386a317/artifacts
+end_time: 1753371301654
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d11777c6686a476e85d6d8db8386a317
+run_name: honorable-frog-824
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753371301630
+status: 3
+tags: []
+user_id: sajid.ansari

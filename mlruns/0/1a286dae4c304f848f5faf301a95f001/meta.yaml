@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/1a286dae4c304f848f5faf301a95f001/artifacts
+end_time: 1753379065942
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1a286dae4c304f848f5faf301a95f001
+run_name: fortunate-stork-200
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753379065920
+status: 3
+tags: []
+user_id: sajid.ansari

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/c9f3a05489764cafa17723f5106cde2d/artifacts
+end_time: 1753372386411
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c9f3a05489764cafa17723f5106cde2d
+run_name: judicious-steed-809
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753372386388
+status: 3
+tags: []
+user_id: sajid.ansari

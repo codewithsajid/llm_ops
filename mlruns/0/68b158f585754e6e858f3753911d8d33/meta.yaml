@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/68b158f585754e6e858f3753911d8d33/artifacts
+end_time: 1753376853339
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 68b158f585754e6e858f3753911d8d33
+run_name: trusting-auk-728
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753376853318
+status: 3
+tags: []
+user_id: sajid.ansari

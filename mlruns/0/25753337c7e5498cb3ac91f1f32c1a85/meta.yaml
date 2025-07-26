@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/25753337c7e5498cb3ac91f1f32c1a85/artifacts
+end_time: 1753357419133
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 25753337c7e5498cb3ac91f1f32c1a85
+run_name: bold-deer-799
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753357419121
+status: 3
+tags: []
+user_id: sajid.ansari

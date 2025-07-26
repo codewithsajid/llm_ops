@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/30ab9e9fe9ec4a8ba8b9c22d729004ec/artifacts
+end_time: 1752997662058
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 30ab9e9fe9ec4a8ba8b9c22d729004ec
+run_name: caring-shark-900
+run_uuid: 30ab9e9fe9ec4a8ba8b9c22d729004ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752997662048
+status: 3
+tags: []
+user_id: sajid.ansari

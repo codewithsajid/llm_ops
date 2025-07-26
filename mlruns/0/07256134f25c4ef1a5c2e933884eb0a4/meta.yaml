@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/07256134f25c4ef1a5c2e933884eb0a4/artifacts
+end_time: 1753192746992
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 07256134f25c4ef1a5c2e933884eb0a4
+run_name: magnificent-fox-688
+run_uuid: 07256134f25c4ef1a5c2e933884eb0a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753192746983
+status: 3
+tags: []
+user_id: sajid.ansari

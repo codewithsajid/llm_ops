@@ -1,0 +1,163 @@
+
+### Task
+Answer the following question based on the provided context. Your answer should be concise (3-4 sentences) and directly address the user's query.
+
+### Guidelines
+1. Synthesize information from the provided sources.
+2. Prioritize information from 'web' sources as they are likely more current.
+3. Cite the sources you use with bracketed numbers, e.g., [1], [2].
+4. If the context is insufficient to answer the question, state that you cannot provide a definitive answer.
+
+### Context
+
+[1] (Source: web) SECTION: Advanced Robotics
+In Robotics, RL enables machines to adapt and optimize their performance in dynamic environments. Research and practical applications span various robotic domains, such as quadruped locomotion, drone navigation, wheeled robotics, and object manipulation. For instance, companies like Swiss-Mile focus on quadruped locomotion, while Shearwater AI and ANDRO Innovation Lab contribute to drone navigation with advanced RL-powered software and recognition by platforms like Tradewinds Solutions Marketplace.
+In wheeled robotics, Unbox Robotics applies RL to automate and optimize movement, reminiscent of consumer robots like Roombas. Similarly, companies like Covariant and Osaro lead in object manipulation through sophisticated RL-driven software solutions.
+
+[2] (Source: web) SECTION: A Survey of Current Advancements in the Generative AI Landscape using Reinforcement Learning
+Now that we understand the basics of Reinforcement Learning, let’s talk about how it is relevant to GenAI today. Recent research at the intersection of reinforcement learning and LLMs has led to significant advancements making GenAI more adaptable, useful, and controllable. Below are some notable developments worth following:
+RLHF: Reinforcement Learning Human Feedback was the first application of Reinforcement Learning to improve an LLM. This approach enhances LLMs by aligning their outputs with human guidance through a Reinforcement Learning feedback loop mechanism.
+Figure 3: Image from Training language models to follow instructions with human feedback. Long Ouyang, et all. 2022. https://arxiv.org/pdf/2203.02155
+RLHF involves three key steps:
+Collect human feedback. Human feedback on model-generated responses is collected and the output is ranked based on quality and alignment with human preferences. This creates an Alignment Dataset that will be used to tune the model. The alignment dataset typically consists of pairs of model-generated responses ranked by human annotators, but can also be curated examples that help prevent biased, harmful, or misleading outputs, as RLHF is often used to direct a model away from producing unwanted responses.Train a reward model. A reward model is defined and trained to predict human preferences using the alignment dataset. The reward model learns to approximate human judgment by mimicking the feedback provided.Fine-tune the LLM using Reinforcement Learning. The model is fine-tuned using RL techniques like Proximal Policy Optimization (PPO), Group Relative Policy Optimization (GRPO) or Process Reward Models (PRMs) to maximize the reward signal from the trained reward model. This improves the LLM’s output forcing it to produce results more in alignment with human feedback.
+Figure 4: Image from “Reinforcement Learning in the Era of LLMs: What is Essential? What is needed? An RL Perspective on RLHF, Prompting, and Beyond”. Hao Sun. 2023. https://arxiv.org/pdf/2310.06147
+One potential limitation of the RLHF approach is the need for human annotated data to align the algorithm with its defined purpose. A truly automatic feedback loop that leverages the explore/exploit framework in Reinforcement Learning could improve an LLM’s behavior while still building in mechanisms to measure, align, and intervene with the algorithm’s output.
+Reasoning Models: Most standard LLMs (like GPT-3) had weak reasoning capabilities, particularly in math, logic, and multi-step problem-solving. Although powerful for language generation, these models were unable to “reasoning” effectively to accurately solve mathematical problems or to perform complex reasoning tasks. This was a known limitation of LLMs, but recently, new models emerged that leverage Reinforcement Learning to better perform these types of reasoning tasks. OpenAI’s o1 and o3
+
+[3] (Source: web) SECTION: Key Models and Breakthroughs (JanâMar 2025)
+Reasoning LLMs and âThinkingâ Models: Kicking off the year, OpenAIâs o1 model (released in preview late 2024) set a high bar for RL-augmented reasoning. By Q1 2025, o1 was fully deployed and demonstrating remarkable performance gains over conventional LLMs. Thanks to its chain-of-thought training via RL, o1 achieves near-expert-level results on hard technical benchmarks: for instance, it solved 83% of problems on the AIME 2024 math exam vs. only 13% by GPT-4o (a GPT-4 variant). It also reached the 89th percentile in Codeforces coding competitions. This leap stems from o1âs ability to internally deliberate â it âspends additional time thinkingâ¦which makes it better for complex reasoning tasksâ. OpenAIâs success with o1 (and a faster, cheaper âo1-miniâ) confirmed that post-training a large model with RL on reasoning tasks can dramatically improve its problem-solving abilities. By early 2025, OpenAI began integrating o1 into products (ChatGPT Plus, Copilot, etc.) and teasing its successor (rumored as the âo3â series), reflecting a company-wide pivot toward RL-heavy training as âthe primary driving force of future LM developmentsâ.
+Other AI labs quickly answered with their own âthinking LLMs.â Googleâs Gemini 2.5 Pro (Experimental), released in March 2025, is a multimodal model explicitly designed for chain-of-thought reasoning. Gemini 2.5 uses techniques drawn from DeepMindâs AlphaGo playbook â notably, policy optimization through self-play and RL fine-tuning â combined with the vast language and multimodal capabilities of its predecessors. The result is a model that reasons through steps before responding, rather than replying immediately. Google reports that Gemini 2.5 Pro debuted at the top of the LMArena leaderboard (a platform measuring human preference among AI outputs), outperforming all prior models by a wide margin. It achieved state-of-the-art results on a battery of reasoning and coding benchmarks, and introduced a massive 1 million token context window to allow extended problem solving sessions. In essence, Gemini 2.5 is a âthinking modelâ similar in spirit to OpenAIâs o1, but with native multimodality (text, vision, audio) and enhanced planning skills. Google positions this model as its most intelligent AI to date, a milestone on the path toward more agentic AI systems. As Demis Hassabis put it, âGemini [combines] AlphaGo-type strengths with the amazing language capabilities of large modelsâ â a succinct description of the RL Renaissance itself.
+Meanwhile, new players have emerged â particularly from China â pushing open-source and freely accessible RL-tuned models. One headline event was the release of DeepSeek R1 in January 2025. DeepSeek AI, an open-weights research lab in China, unveiled R1 as a âreasoning language modelâ trained via a 4-stage RL-heavy process. R1 comes with an MIT license, making it one of the most p
+
+[4] (Source: web) SECTION: Share this news article on:
+
+
+
+
+
+
+
+
+
+
+X
+
+
+
+
+
+
+
+
+
+
+
+Facebook
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LinkedIn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reddit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Print
+
+
+
+SECTION: More MIT News
+
+More news on MIT News homepage →
+
+
+SECTION: 
+New machine-learning application to help researchers predict chemical properties
+
+
+Read full story →
+            
+
+SECTION: 
+Scientists apply optical pooled CRISPR screening to identify potential new Ebola drug targets
+
+
+Read full story →
+            
+
+SECTION: News by Schools/College:
+
+School of Architecture and Planning
+School of Engineering
+School of Humanities, Arts, and Social Sciences
+MIT Sloan School of Management
+School of Science
+MIT Schwarzman College of Computing
+
+
+### Question
+What are the latest developments in RL?
+
+### Answer

@@ -1,0 +1,33 @@
+
+### Task
+Answer the following question based on the provided context. Your answer should be concise (3-4 sentences) and directly address the user's query.
+
+### Guidelines
+1. Synthesize information from the provided sources.
+2. Prioritize information from 'web' sources as they are likely more current.
+3. Cite the sources you use with bracketed numbers, e.g., [1], [2].
+4. If the context is insufficient to answer the question, state that you cannot provide a definitive answer.
+
+### Context
+
+[1] (Source: kb) What makes reinforcement learning diﬀerent from other machine learning paradigms?
+
+[2] (Source: kb) Prediction: evaluate the future
+
+[3] (Source: kb) Game Playing Exploitation Play the move you believe is best Exploration Play an experimental move
+
+[4] (Source: kb) What if agent state = complete sequence?
+
+[5] (Source: kb) A: 3 RL questions B: 3 kernels questions Answer any 3 questions
+
+[6] (Source: kb) What if agent state = last 3 items in sequence?
+
+[7] (Source: kb) Control: optimise the future Find the best policy
+
+[8] (Source: kb) What is the optimal value function over all possible policies? What is the optimal policy?
+
+
+### Question
+What are the latest developments in RL?
+
+### Answer

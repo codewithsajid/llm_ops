@@ -1,0 +1,21 @@
+
+### Task
+Answer the following question based on the provided context. Your answer should be concise (3-4 sentences) and directly address the user's query.
+
+### Guidelines
+1. Synthesize information from the provided sources.
+2. Prioritize information from 'web' sources as they are likely more current.
+3. Cite the sources you use with bracketed numbers, e.g., [1], [2].
+4. If the context is insufficient to answer the question, state that you cannot provide a definitive answer.
+
+### Context
+
+[1] (Source: kb) What makes reinforcement learning diﬀerent from other machine learning paradigms?
+
+[2] (Source: kb) A: 3 RL questions B: 3 kernels questions Answer any 3 questions
+
+
+### Question
+What are the latest developments in RL?
+
+### Answer

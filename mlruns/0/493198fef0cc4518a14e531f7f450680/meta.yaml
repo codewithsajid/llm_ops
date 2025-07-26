@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/493198fef0cc4518a14e531f7f450680/artifacts
+end_time: 1753369729457
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 493198fef0cc4518a14e531f7f450680
+run_name: fearless-robin-677
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753369729445
+status: 3
+tags: []
+user_id: sajid.ansari

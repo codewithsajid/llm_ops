@@ -1,0 +1,33 @@
+
+### Task
+Answer the following question based on the provided context. Your answer should be concise (3-4 sentences) and directly address the user's query.
+
+### Guidelines
+1. Synthesize information from the provided sources.
+2. Prioritize information from 'web' sources as they are likely more current.
+3. Cite the sources you use with bracketed numbers, e.g., [1], [2].
+4. If the context is insufficient to answer the question, state that you cannot provide a definitive answer.
+
+### Context
+
+[1] (Source: kb) What makes reinforcement learning diﬀerent from other machine learning paradigms?
+
+[2] (Source: kb) Goal: select actions to maximise total future reward
+
+[3] (Source: kb) A model of the environment is known The agent performs computations with its model (without any external interaction) The agent improves its policy a.k.a. deliberation, reasoning, introspection, pondering, thought, search
+
+[4] (Source: kb) Prediction: evaluate the future
+
+[5] (Source: kb) Game Playing Exploitation Play the move you believe is best Exploration Play an experimental move
+
+[6] (Source: kb) It is a map from state to action, e.g. Deterministic policy: a = π(s) Stochastic policy: π(a|s) = P[At = a|St = s]
+
+[7] (Source: kb) is
+
+[8] (Source: kb) i.e. whatever data the environment uses to pick the next observation/reward
+
+
+### Question
+What are the latest developments in RL?
+
+### Answer

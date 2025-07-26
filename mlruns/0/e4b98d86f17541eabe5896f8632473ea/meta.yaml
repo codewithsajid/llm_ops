@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/e4b98d86f17541eabe5896f8632473ea/artifacts
+end_time: 1753262664342
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e4b98d86f17541eabe5896f8632473ea
+run_name: gaudy-mole-325
+run_uuid: e4b98d86f17541eabe5896f8632473ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753262664333
+status: 3
+tags: []
+user_id: sajid.ansari

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/57fb41915c8f45ba8a74b87e33820ebd/artifacts
+end_time: 1753278927085
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 57fb41915c8f45ba8a74b87e33820ebd
+run_name: suave-eel-229
+run_uuid: 57fb41915c8f45ba8a74b87e33820ebd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753278927076
+status: 3
+tags: []
+user_id: sajid.ansari

@@ -1,0 +1,2 @@
+
+The latest developments in RL include the emergence of reasoning LLMs and thinking LLMs, such as OpenAI's o1 and Google's Gemini 2.5 Pro. These models are able to reason through steps before responding, rather than replying immediately, and have achieved state-of-the-art results on a battery of reasoning and coding benchmarks. Additionally, the development of open-source and freely accessible RL-tuned models has opened up new possibilities for research and development.

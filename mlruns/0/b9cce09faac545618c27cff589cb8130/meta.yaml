@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/b9cce09faac545618c27cff589cb8130/artifacts
+end_time: 1752997266687
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b9cce09faac545618c27cff589cb8130
+run_name: rumbling-kite-221
+run_uuid: b9cce09faac545618c27cff589cb8130
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752997266674
+status: 3
+tags: []
+user_id: sajid.ansari

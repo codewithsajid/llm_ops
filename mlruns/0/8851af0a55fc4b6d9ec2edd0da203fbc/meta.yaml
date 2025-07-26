@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/8851af0a55fc4b6d9ec2edd0da203fbc/artifacts
+end_time: 1753192369468
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8851af0a55fc4b6d9ec2edd0da203fbc
+run_name: likeable-frog-603
+run_uuid: 8851af0a55fc4b6d9ec2edd0da203fbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753192369460
+status: 3
+tags: []
+user_id: sajid.ansari

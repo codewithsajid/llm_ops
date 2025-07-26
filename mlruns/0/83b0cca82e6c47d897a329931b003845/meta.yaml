@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/83b0cca82e6c47d897a329931b003845/artifacts
+end_time: 1753258084100
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 83b0cca82e6c47d897a329931b003845
+run_name: bemused-rat-263
+run_uuid: 83b0cca82e6c47d897a329931b003845
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753258084089
+status: 3
+tags: []
+user_id: sajid.ansari

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/22af0720f35847ba90e91b08d9e32a22/artifacts
+end_time: 1753379648930
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 22af0720f35847ba90e91b08d9e32a22
+run_name: nosy-hog-175
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753379648908
+status: 3
+tags: []
+user_id: sajid.ansari

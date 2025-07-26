@@ -1,0 +1,2 @@
+
+According to the text, the latest developments in LLMs include the introduction of new training strategies, such as reinforcement learning with verifiable rewards, and the development of new transformer-based models, such as BERT and Claude.

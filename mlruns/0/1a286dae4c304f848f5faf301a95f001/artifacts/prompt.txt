@@ -1,0 +1,61 @@
+
+### Task
+Answer the following question based on the provided context. Your answer should be concise (3-4 sentences) and directly address the user's query.
+
+### Guidelines
+1. Synthesize information from the provided sources.
+2. Prioritize information from 'web' sources as they are likely more current.
+3. Cite the sources you use with bracketed numbers, e.g., [1], [2].
+4. If the context is insufficient to answer the question, state that you cannot provide a definitive answer.
+
+### Context
+
+[1] (Source: web) 7 LLM use cases and applications in 2024
+Learn about the top LLM use cases and applications in 2024 for streamlining business operations, automating mundane tasks, and tackling challenges.
+Large Language Models (LLMs) are powerful models reshaping how we interact with machinesâstreamlining business operations, automating mundane tasks, and uncovering deep insights faster than ever.
+Gone are the days when AI's responses were rigid and predictable. Now, LLMs can create content, write stories, solve complex problems, and even mimic human-like conversations with uncanny accuracy.
+Below, we'll walk you through all the top LLM use cases and applications in 2024.
+What is an LLM (and what do you use it for)?
+Large Language Models decipher and generate human language on a massive scale. These sophisticated algorithms process and understand text in ways that mirror human cognition.
+LLMs operate on neural networks designed to mimic the human brain's way of learning. These models undergo extensive training processes, absorbing vast datasets of text to learn the nuances of language. Through this process, one of the common tasks LLMs are trained to achieve is predicting the next word in a sentence. Equipped with this skill, LLMs can understand natural language well enough to comprehend context from natural language and generate coherent responses to prompts.
+LLMs have shifted how we approach information, communication, and creativity. Their development from basic models to complex systems like GPT-4 illustrates a growing capacity that stretches beyond mere text processing to encompass a broad spectrum of applications:
+- Versatility of applications: Apart from being good at simple tasks, LLMs can achieve varied tasks on natural language like text generation and summarization and eventually be used for applications in medical or legal areas.
+- Human productivity boost: LLMs free up valuable time for creative and strategic thinking by streamlining tasks like content creation, coding, data analysis, and research, as well as more tedious, repetitive types of everyday tasks.Â
+- Accessibility: LLMs serve as a bridge between the vast amounts of data available and actionable insights (making information more accessible and manageable).
+- Interactivity at scale: LLMs lend themselves well to creating interactive tools and have given rise to advanced chatbots, virtual assistants, and educational tools. These applications leverage the models' language understanding to provide users with personalized and engaging experiences.
+However, accessing and using these LLMs for practical application can be challenging.Â
+LeMUR (Leveraging Large Language Models to Understand Recognized Speech) is a cutting-edge platform that acts as a bridge between users and a wide array of LLMs, making it easier for users and businesses to build with LLMs. This tool provides a unified interface to enable developers and businesses to leverage the power of LLMs without the need for extensive AI expert
+
+[2] (Source: web) In part 1 of this series, we discussed use case selection, building a team and the importance of creating a prototype early into your LLM-based product development journey. Let’s pick it up from there – if you are fairly satisfied with your prototype and ready to move forward, start with planning a development approach. It’s also crucial to decide on your productionizing strategy from an early phase.
+With recent advancements with new models and a handful of SDKs in market, it is easy to feel the urge to build cool features such as agents into your LLM-powered application in the early phase. Let’s take a step back and decide the must-have and nice-to-have features as per your use case. Begin by identifying the core functionalities that are essential for your application to fulfill the primary business objectives. For instance, if your application is designed to provide customer support, the ability to understand and respond to user queries accurately would be a must-have feature. On the other hand, features like personalized recommendations might be considered as a nice-to-have feature for future scope.
+Find your ‘fit’
+If you want to build your solution from a concept or prototype, a top-down design model can work best. In this approach, you start with a high level conceptual design of the application without going into much details, and then take separate components to develop each further. This design might not yield the best results at very first, but sets you up for an iterative approach, where you can improve and evaluate each component of the app and test the end-to-end solution in subsequent iterations.
+For an example of this design approach, we can consider a RAG (Retrieval Augmented Generation) based application. These applications typically have 2 high-level components – a retrieval component (which searches and retrieves relevant documents for user query) and a generative component (which produces a grounded answer from the retrieved documents).
+Scenario: Build a helpful assistant bot to diagnose and resolve technical issues by offering relevant solutions from a technical knowledge base containing troubleshooting guidelines.
+STEP 1 – build the conceptual prototype: Outline the overall architecture of the bot without going into much details.
+- Data Collection: Gather a sample dataset from the knowledge base, with questions and answers relevant to your domain.
+- Retrieval Component: Implement a basic retrieval system using a simple keyword-based search, which can evolve into a more advanced vector-based search in future iterations.
+- Generative Component: Integrate an LLM in this component and feed the retrieval results through prompt to generate a grounded and contextual answer.
+- Integration: Combine the retrieval and generative components to create a end-to-end flow.
+- Execution: Identify the resources to run each component. For example, retrieval component can be built using Azure AI search, it offers both keyword-based and advanced v
+
+[3] (Source: web) What Did I Learn from Building LLM Applications in 2024? — Part 2
+An engineer’s journey to building LLM-powered applications
+In part 1 of this series, we discussed use case selection, building a team and the importance of creating a prototype early into your LLM-based product development journey. Let’s pick it up from there — if you are fairly satisfied with your prototype and ready to move forward, start with planning a development approach. It’s also crucial to decide on your productionizing strategy from an early phase.
+With recent advancements with new models and a handful of SDKs in market, it is easy to feel the urge to build cool features such as agents into your LLM-powered application in the early phase. Let’s take a step back and decide the must-have and nice-to-have features as per your use case. Begin by identifying the core functionalities that are essential for your application to fulfill the primary business objectives. For instance, if your application is designed to provide customer support, the ability to understand and respond to user queries accurately would be a must-have feature. On the other hand, features like personalized recommendations might be considered as a nice-to-have feature for future scope.
+Find your ‘fit’
+If you want to build your solution from a concept or prototype, a top-down design model can work best. In this approach, you start with a high level conceptual design of the application without going into much details, and then take separate components to develop each further. This design might not yield the best results at very first, but sets you up for an iterative approach, where you can improve and evaluate each component of the app and test the end-to-end solution in subsequent iterations.
+For an example of this design approach, we can consider a RAG (Retrieval Augmented Generation) based application. These applications typically have 2 high-level components — a retrieval component (which searches and retrieves relevant documents for user query) and a generative component (which produces a grounded answer from the retrieved documents).
+Scenario: Build a helpful assistant bot to diagnose and resolve technical issues by offering relevant solutions from a technical knowledge base containing troubleshooting guidelines.
+STEP 1 - build the conceptual prototype: Outline the overall architecture of the bot without going into much details.
+- Data Collection: Gather a sample dataset from the knowledge base, with questions and answers relevant to your domain.
+- Retrieval Component: Implement a basic retrieval system using a simple keyword-based search, which can evolve into a more advanced vector-based search in future iterations.
+- Generative Component: Integrate an LLM in this component and feed the retrieval results through prompt to generate a grounded and contextual answer.
+- Integration: Combine the retrieval and generative components to create a end-to-end flow.
+- Execution: Identify the resources to run eac
+
+
+### Question
+What are the latest developments in LLMs?
+
+### Answer

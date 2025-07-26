@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/8dfc7d34b7584cdd8d33e096d3878407/artifacts
+end_time: 1753370578061
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8dfc7d34b7584cdd8d33e096d3878407
+run_name: stylish-snail-168
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753370578049
+status: 3
+tags: []
+user_id: sajid.ansari
