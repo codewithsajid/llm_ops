@@ -1,152 +1,140 @@
-# LLM-Ops: Agentic RAG + LLM Chatbot
+# LLM-Ops — Agentic RAG CoPilot (Cloud + Local)
 
-A cutting-edge framework implementing **Retrieval-Augmented Generation (RAG)** combined with an **agentic decision-making** component powered by **Large Language Models (LLMs)**. Designed for scalability, quality, and ease of operations (LLMOps), this system integrates local knowledge bases and real-time web search to provide accurate, relevant, and dynamic conversational responses.
-
----
-
-## 🌟 Key Features
-
-### ✅ **Agentic Retrieval-Augmented Generation (RAG)**
-
-* Dynamically evaluates the sufficiency of local knowledge.
-* Automatically decides when to augment responses with fresh web data.
-* Ensures responses are timely, accurate, and contextually relevant.
-
-### ✅ **Advanced LLM Integration**
-
-* Utilizes Google's **Gemma 7B** LLM for high-quality conversational outputs.
-* Supports customizable generation settings (temperature, sampling).
-
-### ✅ **Smart Retrieval & Re-ranking**
-
-* **Hybrid search** via Weaviate for vector-based semantic retrieval.
-* **CrossEncoder re-ranking** ensures precision and relevance.
-* Efficient deduplication and token budgeting prevent prompt overflow.
-
-### ✅ **Web Search Integration**
-
-* Leverages DuckDuckGo API for real-time web searches.
-* LLM-generated smart queries ensure accurate and relevant search results.
-* Content extraction powered by Trafilatura ensures clean text inputs.
-
-### ✅ **Robust Evaluation & Decision Making**
-
-* Intelligent confidence-based evaluation by LLM.
-* Structured reasoning prompts for reliable decision-making.
-
-### ✅ **LLMOps & Observability**
-
-* MLflow integration for logging and experiment tracking.
-* Rich, structured logging for debugging and operational insights.
+LLM-Ops turns your loose folder of PDFs, HTML, and notes into a fully traceable,
+search-savvy chatbot.  
+It mixes **agentic Retrieval-Augmented Generation (RAG)**, a
+**docs-MCP** micro-service, and optional **Vertex AI Search** so answers stay
+grounded, fresh, and easy to audit.
 
 ---
 
-## Architecture Overview
+## ✨ Why another RAG repo?
 
-```
-User Question
-      │
-      ▼
-┌───────────────┐      ┌───────────┐      ┌──────────────┐
-│ Retrieval     │─────▶│ Evaluator │─────▶│ Local KB     │
-└───────────────┘      └───────────┘      └──────────────┘
-      │                        │
-      ▼                        ▼
-┌───────────────┐      ┌───────────────┐
-│ Web Searcher  │◀────▶│ Decision Gate │
-└───────────────┘      └───────────────┘
-      │
-      ▼
-┌───────────────┐      ┌───────────┐
-│ Reranker      │─────▶│ LLM Chat  │
-└───────────────┘      └───────────┘
-      │
-      ▼
-Structured Response
-(with citations)
-```
+| Headache                    | How LLM-Ops fixes it                                                |
+| --------------------------- | ------------------------------------------------------------------- |
+| *“Does my KB already answer this?”* | The **RAGAgent** scores sufficiency before calling the LLM. |
+| *Token explosions*          | Deduplication + token budgeting trim context to fit the LLM window. |
+| *Out-of-date docs*          | Agent can fire live web / Vertex AI search when confidence is low. |
+| *Messy configs*             | All settings live in **Pydantic** models – no magic numbers.        |
+| *Observability black hole*  | **MLflow** logs prompts, answers, citations, and latency for every run. |
 
 ---
 
-## 🚩 Quickstart
+## 🏗️  What’s inside?
 
-### Installation
+| Layer | Tech / Library | What it does |
+|-------|----------------|--------------|
+| **Ingest** | `unstructured`, Tika, Doctr OCR | Split & clean docs → text blocks |
+| **Chunk + Embed** | SentenceTransformer (E5-base-v2) | 800-word chunks → dense vectors |
+| **Store** | Weaviate v4 (named vectors + PQ) | Hybrid semantic search |
+| **Agent** | `RAGAgent` (typed with `AgentCfg`) | Decides KB vs. web, trims tokens |
+| **LLM** | Google **Gemma 7B-it** | Rewrites queries, judges hits, streams answer |
+| **Web Search** | DuckDuckGo + LLM query gen | Pulls fresh text snippets |
+| **Vertex AI (cloud)** | Gemini 2.5 Flash search tool | Richer results & automatic grounding |
+| **docs-MCP** | FastAPI micro-service | List / search / fetch KB chunks |
+| **Config + Schemas** | `pydantic` | Type-safe settings & data models |
+| **Logs** | MLflow | Everything tracked for repro |
+
+---
+
+## 🔍  Data → Answer flow
+
+```text
+PDFs / HTML
+     │             ┌─► Weaviate (vectors)
+     ▼             │
+Ingestion script  │
+(split + embed)   │
+     │             │
+     ▼             │
+RAGAgent ──► Sufficiency judge ─┬─► if ✅: use KB only
+     │                          │
+     │                          └─► if ❌: Web / Vertex search → merge hits
+     ▼
+Reranker  →  Gemma 7B-it  →  Answer  (+ numbered citations)
+````
+
+---
+
+## 🚀  Quick start
 
 ```bash
+# 1) install
 git clone https://github.com/codewithsajid/llm_ops.git
 cd llm_ops
 pip install -r requirements.txt
+
+# 2) ingest your docs (put files in data/raw/)
+python -m llm_ops.ingest.ingest_docs
+
+# 3) ask a question
+python -m llm_ops.rag_chatbot \
+  --question "Latest advances in reinforcement learning?" \
+  --web --creative
 ```
 
-### Usage
+### Handy flags
 
-Run the chatbot locally:
-
-```bash
-python -m llm_ops.rag_chatbot --question "What are the latest developments in RL?" --web --creative
-```
-
-### Additional Flags
-
-* `--web`: Enables agentic web search.
-* `--creative`: Uses creative response generation (temperature = 0.7).
-* `--debug`: Enables detailed debug outputs.
+| Flag          | What it does                                |
+| ------------- | ------------------------------------------- |
+| `--web`       | Enable DuckDuckGo fallback                  |
+| `--google-ai` | Use experimental Google AI overview scraper |
+| `--creative`  | Higher temperature / top-p for LLM          |
+| `--debug`     | Print full agent trace & prompts            |
 
 ---
 
-## 📖 Project Structure
+## ⚙️  docs-MCP micro-service
+
+```bash
+uvicorn llm_ops.server:app --port 8000
+
+# list docs
+curl http://localhost:8000/docs
+
+# semantic search
+curl -X POST http://localhost:8000/search \
+     -d '{"query_text":"policy gradient","top_k":3}'
+```
+
+Use it as a drop-in KB API for other apps or dashboards.
+
+---
+
+## 📂  Repo layout
 
 ```
 llm_ops/
-├── agents/
-│   └── rag_agent.py
-├── llm/
-│   └── gemma.py
-├── utils/
-│   ├── web_search.py
-│   └── query_generator.py
-├── weaviate_client.py
-├── rag_chatbot.py
-├── mlflow_utils.py
-└── prompt_templates.py
+├─ agents/          # RAGAgent + config
+├─ ingest/          # document loaders / embed pipeline
+├─ llm/             # Gemma wrapper (generate + streaming)
+├─ utils/           # web search, Vertex AI, helpers
+├─ server.py        # docs-MCP FastAPI app
+├─ rag_chatbot.py   # CLI entry-point
+└─ tests/
 ```
 
 ---
 
-## 🔮 Future Roadmap
+## 🛣️  Roadmap
 
-* **Multimodal RAG**: Integrate image and video retrieval.
-* **Enhanced Agentic Behavior**: Incorporate advanced planning and reasoning loops.
-* **Interactive UI**: Web-based chatbot interface with visualizations.
+* **Multimodal ingestion** (images, video metadata)
+* **Iterative agent planning** for multi-step reasoning
+* Web UI with live answer streaming & citation inspection
+* Plug-and-play hosted LLMs via Vertex AI / OpenAI endpoints
 
 ---
 
-## 📃 Citation
+## 📜  License & citation
 
-Please cite this repository if used in your research or projects:
+MIT License.
+If this repo helps your work, please cite it:
 
 ```
 @misc{llmops2025,
   author = {Sajid Ansari},
-  title = {LLM-Ops: Agentic Retrieval-Augmented Generation with LLM Chatbot},
-  year = {2025},
-  url = {https://github.com/codewithsajid/llm_ops}
+  title  = {LLM-Ops: Agentic RAG Chatbot Playground},
+  year   = {2025},
+  url    = {https://github.com/codewithsajid/llm_ops}
 }
 ```
-
----
-
-## 🌐 Contributing
-
-Contributions and feedback are highly encouraged! Open an issue or submit a pull request to improve the project.
-
----
-
-## 📬 Contact
-
-* GitHub: [codewithsajid](https://github.com/codewithsajid)
-* Email: [your.email@example.com](mailto:your.email@example.com)
-
----
-
-Happy RAGging! 🚀✨
