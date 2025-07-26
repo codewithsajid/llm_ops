@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/868e867a8da2405790cc7b9fa35c052d/artifacts
+end_time: 1753527314066
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 868e867a8da2405790cc7b9fa35c052d
+run_name: awesome-sponge-830
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753527314043
+status: 3
+tags: []
+user_id: sajid.ansari

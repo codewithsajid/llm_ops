@@ -1,103 +1,193 @@
-(llm_ops) sajid.ansari@gvlab:~/ml-in-ed/LLM_Ops$ PYTHONWARNINGS="ignore" python llm_ops/utils/vertex_ai_search.py 
-Vertex AI SDK initialized successfully.
-Google Search tool created successfully using dict method.
-Generative model 'gemini-2.5-flash' initialized with Google Search tool.
 
-Sending prompt to model: 'What are the latest developments in Reinforcement Learning in 2025?'
+## Latest reinforcement learning research with video or charts/diagrams explanations, and code examples
+*2025-07-26 21:31*
 
-==================================================
-MODEL RESPONSE
-==================================================
-Reinforcement Learning (RL) in 2025 is marked by significant advancements in algorithmic efficiency, a broadening of its applications across diverse industries, and a continued focus on addressing computational and ethical challenges. The field is experiencing a transformation, moving towards more sophisticated and cost-effective solutions.
+Reinforcement Learning (RL) continues to be a rapidly evolving field, with significant breakthroughs and emerging trends shaping the future of artificial intelligence. Recent research, particularly from late 2023 through 2025, has focused on addressing key challenges such as generalization, scalability, and integration with other advanced AI paradigms like Large Language Models (LLMs).
 
-**Key Developments in Reinforcement Learning in 2025:**
+Here are some of the latest trends in reinforcement learning, accompanied by explanations, diagrams/charts, and code examples where available:
 
-*   **Algorithmic Innovations** Deep Reinforcement Learning (DRL) continues to be a driving force, with algorithms like Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC) becoming more advanced, enabling agents to learn complex behaviors with greater efficiency. A notable trend is the development of more sample-efficient algorithms. Researchers are also exploring more generalized RL systems capable of transferring learned knowledge across different domains. Specific advancements include:
-    *   **Offline Reinforcement Learning (Batch RL):** This allows algorithms to learn from fixed datasets rather than real-time trial-and-error, which is crucial for safety-critical applications like autonomous driving and healthcare where online experimentation carries risks.
-    *   **Meta-Reinforcement Learning:** Focuses on training models that can quickly adapt to new tasks with minimal data.
-    *   **Hierarchical Reinforcement Learning (HRL):** Breaks down complex tasks into simpler subtasks, leading to more interpretable and robust policies, particularly effective in multi-step processes like assembly lines.
-    *   **Hybrid Approaches:** Recent algorithms combine the strengths of model-based (learning an internal model of the environment) and model-free (directly learning from rewards) methods.
+### 1. Reinforcement Learning from Human Feedback (RLHF)
 
-*   **Reduced Computational Costs** By 2025, RL is transforming machine learning by significantly cutting computational costs. This is achieved through the use of pretrained models, advanced algorithms, and optimized reward functions. The DeepSeek-R1 paper, for instance, gained prominence for demonstrating how RL can achieve high performance in Large Language Models (LLMs) with substantially fewer computing resources.
+RLHF has emerged as a transformative technique, most notably in aligning Large Language Models (LLMs) with human preferences and values. It addresses the challenge of defining complex, subjective reward functions by leveraging human input.
 
-*   **Expanding Applications Across Industries** RL is being adopted across various sectors, revolutionizing processes and decision-making:
-    *   **Healthcare:** RL algorithms are being developed for personalized treatment optimization, dynamically adjusting treatment plans based on individual patient responses, and assisting in complex medical decisions like chemotherapy protocols and risk prediction.
-    *   **Robotics:** RL enables robots to adapt and optimize performance in dynamic environments, with applications in locomotion, manipulation, and autonomous navigation. This includes generalist policies for robotic hands and automated movement in wheeled robotics.
-    *   **Autonomous Systems:** RL is crucial for optimizing decision-making in autonomous driving, with companies like Wayve and Waymo leveraging it to enhance capabilities. It also plays a role in drone navigation and obstacle avoidance, showing high success rates in trials.
-    *   **Finance:** RL is used for portfolio optimization and algorithmic trading.
-    *   **Gaming:** Beyond being a training ground for models, RL is used in game development to create adaptive non-player characters (NPCs) and dynamic environments.
-    *   **Manufacturing and Industrial Control:** Applications include optimizing process parameters, managing assembly lines, optimizing supply chains, and enhancing quality control and production.
-    *   **Large Language Models (LLMs):** RL is increasingly powering advanced language models, utilizing techniques like retrieval-augmented generation and reward model training to improve coherence and factual accuracy.
-    *   **Machine Vision:** RL improves the adaptability and precision of machine vision systems, aiding in tasks like object detection, image sorting, and obstacle avoidance.
+*   **Explanation:** Instead of relying on a pre-defined reward function, RLHF involves three main steps:
+    1.  **Pretraining a Language Model (LM):** A base LLM is initially trained on a vast amount of text data.
+    2.  **Training a Reward Model:** Human evaluators rank different outputs generated by the LM. This human feedback is used to train a separate "reward model" that learns to predict human preferences.
+    3.  **Fine-tuning the LM with RL:** The reward model then provides a scalar reward signal to the LLM, which is fine-tuned using reinforcement learning algorithms (like Proximal Policy Optimization - PPO) to maximize this learned reward. This iterative process allows the LLM to generate responses that are more helpful, harmless, and aligned with human intentions.
 
-*   **Market Growth and Challenges** The Reinforcement Learning market size surged to over $122 billion in 2025, with projections indicating substantial future growth. Despite its promising advancements, RL still faces challenges such as sample inefficiency, effective reward shaping, and ensuring real-world safety. Future directions include the potential fusion of RL with LLMs, robotics, and unsupervised pretraining, along with a continuous emphasis on ethical considerations and transparency in its deployment.
+*   **Recent Advancements:** In 2024, research explored how better reward models don't always yield better language models, indicating ongoing complexities in the RLHF process. Techniques like "Reward Evolution" with LLMs are also being developed. The synergy between RL and LLMs is expected to deepen, leading to more powerful and human-aligned AI systems.
 
-==================================================
-SOURCES & CITATIONS
-==================================================
-1. A notable trend is the development of more sample-efficient algorithms
-   Chunk indices: [0]
+*   **Diagrams/Charts & Code Examples:**
+    *   Hugging Face provides an excellent illustration of the RLHF process, breaking down the multi-model training.
+    *   Analytics Vidhya offers Python code examples for Deep RL with Human Feedback using the Deep Q-Network (DQN) algorithm, and for Model-Based RL with Human Feedback.
+    *   A technical tutorial on RLHF provides a full training pipeline with reproducible code using datasets like UltraFeedback and models like Llama-3-8B-it, employing state-of-the-art algorithms like REBEL.
+    *   GitHub repositories often curate resources for RLHF, including codebases and research papers.
 
-2. Researchers are also exploring more generalized RL systems capable of transferring learned knowledge across different domains
-   Chunk indices: [0]
+### 2. Offline Reinforcement Learning (Offline RL)
 
-3. Specific advancements include:
-    *   **Offline Reinforcement Learning (Batch RL):** This allows algorithms to learn from fixed datasets rather than ...
-   Chunk indices: [1]
+Offline RL focuses on learning effective policies from pre-collected, static datasets without further interaction with the environment. This is crucial for real-world applications where online data collection is expensive, risky, or impossible (e.g., healthcare, autonomous driving).
 
-4. *   **Meta-Reinforcement Learning:** Focuses on training models that can quickly adapt to new tasks with minimal data
-   Chunk indices: [1]
+*   **Explanation:** The core challenge in offline RL is distribution shift: the policy trained on static data might try to take actions not well-represented in the dataset, leading to poor performance. Recent algorithms aim to mitigate this by constraining the learned policy to stay close to the behavior policy that generated the data or by employing pessimistic estimates of Q-values for out-of-distribution actions.
 
-5. *   **Hierarchical Reinforcement Learning (HRL):** Breaks down complex tasks into simpler subtasks, leading to more interpretable and robust policies,...
-   Chunk indices: [1]
+*   **Recent Advancements:** Significant progress has been made in developing various algorithms, including model-free methods (e.g., CQL, CRR, BCQ, TD3BC) and model-based methods (e.g., MOPO, COMBO, MOBILE). A 2023 paper highlighted how the success of offline RL severely depends on data distribution and the impact of low-level implementation choices, proposing a guidebook for effective implementations. In 2025, research has focused on rigorous taxonomy, transparent evaluation protocols, and minimalistic, single-file implementations to enhance clarity and speed in offline RL.
 
-6. *   **Hybrid Approaches:** Recent algorithms combine the strengths of model-based (learning an internal model of the environment) and model-free (dire...
-   Chunk indices: [1]
+*   **Code Examples:**
+    *   "Papers With Code" lists numerous papers with associated code for Offline RL.
+    *   GitHub repositories like "polixir/OfflineRL" and "hanjuku-kaso/awesome-offline-rl" provide collections of offline RL algorithms with links to their code implementations and examples for various tasks and data types.
+    *   A 2025 paper introduces "Unifloral," a unified algorithm with publicly available code that encapsulates diverse prior approaches, providing streamlined implementations and achieving significant speed-ups.
 
-7. This is achieved through the use of pretrained models, advanced algorithms, and optimized reward functions
-   Chunk indices: [2]
+### 3. Generalization in Reinforcement Learning
 
-8. The DeepSeek-R1 paper, for instance, gained prominence for demonstrating how RL can achieve high performance in Large Language Models (LLMs) with subs...
-   Chunk indices: [3]
+A persistent challenge in RL is the ability of trained agents to generalize their learned policies to new, unseen environments or tasks that differ from their training data. Overfitting to training environments is a common issue.
 
-9. *   **Expanding Applications Across Industries** RL is being adopted across various sectors, revolutionizing processes and decision-making:
-    *   **...
-   Chunk indices: [0]
+*   **Explanation:** Agents often struggle when deployed in slightly different scenarios (e.g., varying lighting, object textures, or minor changes in dynamics) than those encountered during training. Research aims to develop methods that improve robustness and adaptability.
 
-10. This includes generalist policies for robotic hands and automated movement in wheeled robotics
-   Chunk indices: [4]
+*   **Recent Advancements:**
+    *   **Data Augmentation:** Techniques like MixReg, which smoothly interpolates observations from different training environments, have shown to substantially improve generalization performance compared to traditional local data augmentation methods.
+    *   **Representation Learning:** Unsupervised representation learning of action observations can help achieve generalization to new actions, even unseen ones.
+    *   **Adversarial Analysis and Regularization:** Surveys in 2024 highlight various approaches, including exploration, adversarial analysis, and regularization, to build robust deep neural policies with higher generalization skills.
+    *   **Pre-training:** The power of pre-training for generalization in RL is also being investigated.
 
-11. *   **Autonomous Systems:** RL is crucial for optimizing decision-making in autonomous driving, with companies like Wayve and Waymo leveraging it to e...
-   Chunk indices: [4]
+*   **Diagrams/Charts & Code Examples:**
+    *   The MixReg paper provides a figure illustrating how their method differs from previous data augmentation techniques in generating more diverse data.
+    *   While specific large code repositories for generalization are less common than for algorithms, many papers (e.g., those listed in the "rl-generalization-paper" GitHub repository) include links to their code.
 
-12. It also plays a role in drone navigation and obstacle avoidance, showing high success rates in trials
-   Chunk indices: [5]
+### 4. Scalable and Multi-Agent Reinforcement Learning
 
-13. *   **Finance:** RL is used for portfolio optimization and algorithmic trading
-   Chunk indices: [6]
+As RL is applied to increasingly complex systems, scalability (handling large state/action spaces and computational demands) and coordination in multi-agent settings become critical.
 
-14. *   **Gaming:** Beyond being a training ground for models, RL is used in game development to create adaptive non-player characters (NPCs) and dynamic ...
-   Chunk indices: [4]
+*   **Explanation:** Multi-agent RL often faces scalability issues due to the exponential growth of state and action spaces with the number of agents. Research focuses on developing decentralized policies, hierarchical RL, or exploiting network structures to manage this complexity.
 
-15. *   **Manufacturing and Industrial Control:** Applications include optimizing process parameters, managing assembly lines, optimizing supply chains, a...
-   Chunk indices: [0, 4, 5]
+*   **Recent Advancements:**
+    *   **Scalable Actor-Critic (SAC) Frameworks:** New frameworks that exploit network structures to find localized policies for large-scale networked systems (e.g., wireless communication, traffic, epidemics) have been proposed in 2022.
+    *   **Distributed RL Systems:** RLlib is an open-source library widely adopted for scalable reinforcement learning, providing primitives and programming models for distributed RL algorithms.
+    *   **Applications:** RL is optimizing energy distribution, traffic management, and warehouse logistics in smart cities and autonomous systems, often requiring scalable multi-agent solutions.
 
-16. *   **Large Language Models (LLMs):** RL is increasingly powering advanced language models, utilizing techniques like retrieval-augmented generation a...
-   Chunk indices: [1, 3]
+*   **Code Examples:**
+    *   RLlib is a prominent example of a scalable RL system with open-source code.
+    *   Papers on scalable multi-agent RL, such as the SAC framework, often provide or link to code associated with their research.
 
-17. *   **Machine Vision:** RL improves the adaptability and precision of machine vision systems, aiding in tasks like object detection, image sorting, an...
-   Chunk indices: [5]
+### 5. Reinforcement Learning in Robotics and Real-World Applications
 
-18. *   **Market Growth and Challenges** The Reinforcement Learning market size surged to over $122 billion in 2025, with projections indicating substanti...
-   Chunk indices: [4]
+RL continues to drive advancements in robotics and various real-world domains, moving beyond games to practical scenarios.
 
-19. Future directions include the potential fusion of RL with LLMs, robotics, and unsupervised pretraining, along with a continuous emphasis on ethical co...
-   Chunk indices: [6, 3]
+*   **Explanation:** Robots use RL to learn complex motor control, manipulation tasks, and navigation. This often involves learning from human demonstrations (imitation learning) or integrating multiple sensory inputs (multimodal learning).
 
-==================================================
-SEARCH QUERIES USED
-==================================================
-Search interface provided for further exploration
+*   **Recent Advancements:**
+    *   **Multimodal Learning for Robotic Assistants:** In 2024, robots are using RL to integrate information from vision, touch, sound, and natural language instructions, enabling them to learn complex tasks by observing human demonstrations and adapting to new environments.
+    *   **Interactive Learning and LLM Integration:** LLMs are being used to instruct RL agents and robots, enabling interactive learning, reward design, and task breakdown in complex domains. This allows robots to understand higher-level instructions rather than just predefined tasks. Projects like ALOHA (a robot learning to fold clothes) and Voyager (an RL agent using GPT-4 for Minecraft) demonstrate this.
+    *   **Efficiency:** Research in 2024-2025 also focuses on more sample-efficient RL algorithms to reduce the significant computational demands for real-world deployment.
 
+*   **Videos & Code Examples:**
+    *   YouTube channels and research groups often publish videos demonstrating robotic capabilities learned through RL (e.g., Mobile ALOHA, mentioned in context of RL + LLMs).
+    *   Specific research papers in robotics often accompany their findings with code repositories (e.g., ALOHA project).
+    *   Tutorials on general RL concepts often use simple robotic control environments (like Lunar Lander) to demonstrate code implementations using libraries such as OpenAI Gymnasium.
 
---------------------------------------------------------------------------------
+These trends collectively indicate a push towards more robust, generalized, and human-aligned RL systems that can tackle increasingly complex real-world problems.
+
+**Sources:**
+[1] RLHF has emerged as a transformative technique, most notably in aligning Large Language Models (LLMs) with human preferences and values
+
+[2] **Pretraining a Language Model (LM):** A base LLM is initially trained on a vast amount of text data
+
+[3] This human feedback is used to train a separate "reward model" that learns to predict human preferences
+
+[4] **Fine-tuning the LM with RL:** The reward model then provides a scalar reward signal to the LLM, which is fine-tuned using reinforcement learning alg...
+
+[5] This iterative process allows the LLM to generate responses that are more helpful, harmless, and aligned with human intentions
+
+[6] **Recent Advancements:** In 2024, research explored how better reward models don't always yield better language models, indicating ongoing complex...
+
+[7] Techniques like "Reward Evolution" with LLMs are also being developed
+
+[8] The synergy between RL and LLMs is expected to deepen, leading to more powerful and human-aligned AI systems
+
+[9] **Diagrams/Charts & Code Examples:**
+    Hugging Face provides an excellent illustration of the RLHF process, breaking down the multi-model tr...
+
+[10] Analytics Vidhya offers Python code examples for Deep RL with Human Feedback using the Deep Q-Network (DQN) algorithm, and for Model-Based RL with...
+
+[11] A technical tutorial on RLHF provides a full training pipeline with reproducible code using datasets like UltraFeedback and models like Llama-3-8B...
+
+[12] GitHub repositories often curate resources for RLHF, including codebases and research papers
+
+[13] Offline RL focuses on learning effective policies from pre-collected, static datasets without further interaction with the environment
+
+[14] This is crucial for real-world applications where online data collection is expensive, risky, or impossible (e.g., healthcare, autonomous driving)
+
+[15] Recent algorithms aim to mitigate this by constraining the learned policy to stay close to the behavior policy that generated the data or by employing...
+
+[16] **Recent Advancements:** Significant progress has been made in developing various algorithms, including model-free methods (e.g., CQL, CRR, BCQ, T...
+
+[17] A 2023 paper highlighted how the success of offline RL severely depends on data distribution and the impact of low-level implementation choices, propo...
+
+[18] In 2025, research has focused on rigorous taxonomy, transparent evaluation protocols, and minimalistic, single-file implementations to enhance clarity...
+
+[19] **Code Examples:**
+    "Papers With Code" lists numerous papers with associated code for Offline RL
+
+[20] GitHub repositories like "polixir/OfflineRL" and "hanjuku-kaso/awesome-offline-rl" provide collections of offline RL algorithms with links to thei...
+
+[21] A 2025 paper introduces "Unifloral," a unified algorithm with publicly available code that encapsulates diverse prior approaches, providing stream...
+
+[22] A persistent challenge in RL is the ability of trained agents to generalize their learned policies to new, unseen environments or tasks that differ fr...
+
+[23] Overfitting to training environments is a common issue
+
+[24] **Recent Advancements:**
+     **Data Augmentation:** Techniques like MixReg, which smoothly interpolates observations from different training e...
+
+[25] **Representation Learning:** Unsupervised representation learning of action observations can help achieve generalization to new actions, even unse...
+
+[26] **Adversarial Analysis and Regularization:** Surveys in 2024 highlight various approaches, including exploration, adversarial analysis, and regula...
+
+[27] **Pre-training:** The power of pre-training for generalization in RL is also being investigated
+
+[28] **Diagrams/Charts & Code Examples:**
+    The MixReg paper provides a figure illustrating how their method differs from previous data augmentat...
+
+[29] While specific large code repositories for generalization are less common than for algorithms, many papers (e.g., those listed in the "rl-generali...
+
+[30] As RL is applied to increasingly complex systems, scalability (handling large state/action spaces and computational demands) and coordination in multi...
+
+[31] **Explanation:** Multi-agent RL often faces scalability issues due to the exponential growth of state and action spaces with the number of agents
+
+[32] Research focuses on developing decentralized policies, hierarchical RL, or exploiting network structures to manage this complexity
+
+[33] **Recent Advancements:**
+     **Scalable Actor-Critic (SAC) Frameworks:** New frameworks that exploit network structures to find localized poli...
+
+[34] **Distributed RL Systems:** RLlib is an open-source library widely adopted for scalable reinforcement learning, providing primitives and programmi...
+
+[35] **Applications:** RL is optimizing energy distribution, traffic management, and warehouse logistics in smart cities and autonomous systems, often ...
+
+[36] Papers on scalable multi-agent RL, such as the SAC framework, often provide or link to code associated with their research
+
+[37] RL continues to drive advancements in robotics and various real-world domains, moving beyond games to practical scenarios
+
+[38] This often involves learning from human demonstrations (imitation learning) or integrating multiple sensory inputs (multimodal learning)
+
+[39] **Recent Advancements:**
+     **Multimodal Learning for Robotic Assistants:** In 2024, robots are using RL to integrate information from vision...
+
+[40] This allows robots to understand higher-level instructions rather than just predefined tasks
+
+[41] Projects like ALOHA (a robot learning to fold clothes) and Voyager (an RL agent using GPT-4 for Minecraft) demonstrate this
+
+[42] **Efficiency:** Research in 2024-2025 also focuses on more sample-efficient RL algorithms to reduce the significant computational demands for real...
+
+[43] **Videos & Code Examples:**
+    YouTube channels and research groups often publish videos demonstrating robotic capabilities learned through R...
+
+[44] Tutorials on general RL concepts often use simple robotic control environments (like Lunar Lander) to demonstrate code implementations using libra...
+
+**Web Resources:**
+• [robotics reinforcement learning breakthroughs 2024 code](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE12jMTgm5ZaeYQ_zW06nYSHjEpxEhEds5VGwluPs5yQFecPywbfCBQPA9FVk0BBkppUNZOeZDODAMC7uJirptOhIsjocBhiQTFwOub7vjQtEdTInhHUFF0Zcz7UILynTj841fj6hCo57A3kwtU5M3Q9VieOu0Rl9kwK6n3ICYcokiEjXZtgQvVPM3H0Jw-AQQIZHjIbcLkpoKzs99POiZT3zdbhlgOxxXenwxboOhuXgIyfP2KaMiGHA==)
+• [offline reinforcement learning recent advancements code](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7yl1htZqPDAtmeY8EbVHc78zDQGCF7FN-Roj6hjMeaakBsKbSbbomeESUnpIWI8aBcmOaevUBroU7uWHRsVqjBebOyS_Ef2X9Ag22RHTGVF57mFTD1ETu9428QwpzKBhc4rwxuPGYJBw9gil-CusI4sZ-jGI6H404wNjvTiqIzAQeNnAv94cmX7GxWV7tZ_4C1iiJoTE9nhUP6grCgm4ZoX6_8MqxflfzdniI9A68iKkzIe7TRufDGA==)
+• [latest reinforcement learning research trends 2024 2025](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEezNRSWASc-Z9_w1eBZIBCWWta8XHwnQmmq9TASsaNKYB2WCu2dHFSJykO6udxcDmIT3bmfHaab0wHIkUuAWhj8_RMvzI--Qk4WTh5-igBIdxyhH5T3Xrl7UtV_h2j2Zyk2WNqrrDwJoP7RIx_IverWJqk5oJgMSeTeYG6WLpEnm3SjmqEf3u0CBdp-KlFyyfEC1BxgbOze6Wb9zEm4zF0EXL9DpusBPYfEPLJvSbZrTNO-e5rZSL8cw==)
+• [reinforcement learning from human feedback code examples diagrams](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiy54gbf1UBcuFVJZA4EpTUJunMd5XbBMgibSUM_pl3e7N3tTuSo0oDHKB4qmokKSqX1F_2OOP2FQWXwvvWB1dzfvX8AT4NkgtQZQGQwFkjLMnKFSLJNmv6FK6ELID2pl5h3QqtOvPJCGmbUrnVv5Wv7Ts3ixJnI6wdfo3Y-Pojuf0cR0-yOms-2D6Vs9HFVS8-4GcFpWfAuKMycYTnU0taQX9urB9-C04iO9KFK3D6Ng3lncxOIYM7Amwc2btC8Z__CU=)
+• [generalization in reinforcement learning recent papers](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqkXucxsTU3KwBsqjssO9ruKLb3biHe1zsp8gqnTFPxaO8HqPvY5fMOrBMF4hUqSqCqnXuDGKTq64b5aL6jGh_C_kqXTBM6dGsv6J5i-aSFO4innnE4vCa6b-CFyc8Pqil2Vb1U8--UYJggoCvdps_XT57WfqTJsU4Eq6XsjV6TbYryF-fQYeaPfIpIdInhR0XbLGTA6viF0kK6nvNCQ05vHd1hRZvN3NeQjy9_BMW3hnkR_CP-6d0)
+• [scalable reinforcement learning research](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_NTbmKwi2DkRHXbqwPx2JSnFxyf_5-6AIJ6AbWVH3RdwALt2IRHr9cOQ8U4wNeQ2jMDWi5P7HaR8eL6Ff_nUQB5SBjIgcBkVT9-6nq4fr9oqXPOAs5UDXTjHtD57HipqdvB6gmQC3cVhcxJwxNfTfjYfsl0yuhV7i6CfvSHvFsOGIMtV2O5k1swmNNL39h1sU1hzAlEvEh3JZuxKhs0t5fiLxfVqjJK0D)
+
+---
+

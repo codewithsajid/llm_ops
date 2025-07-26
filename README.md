@@ -43,8 +43,8 @@ grounded, fresh, and easy to audit.
 PDFs / HTML
      │             ┌─► Weaviate (vectors)
      ▼             │
-Ingestion script  │
-(split + embed)   │
+Ingestion script   │
+(split + embed)    │
      │             │
      ▼             │
 RAGAgent ──► Sufficiency judge ─┬─► if ✅: use KB only

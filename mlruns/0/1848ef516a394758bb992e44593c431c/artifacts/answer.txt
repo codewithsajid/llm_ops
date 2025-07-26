@@ -1,0 +1,3 @@
+
+
+The value function is a prediction of future reward [1]. It is a map from state to action, and it is used to find the optimal policy [4]. The value function is also used to calculate the expected value of a state under a given policy [8].

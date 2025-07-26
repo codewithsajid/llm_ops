@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sajid.ansari/ml-in-ed/LLM_Ops/mlruns/0/65aeef3f451b4826aa3a03916db9114b/artifacts
+end_time: 1753526780616
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 65aeef3f451b4826aa3a03916db9114b
+run_name: awesome-crane-400
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753526780592
+status: 3
+tags: []
+user_id: sajid.ansari

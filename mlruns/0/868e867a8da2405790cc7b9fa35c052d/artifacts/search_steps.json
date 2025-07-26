@@ -1,0 +1,14 @@
+[
+  {
+    "source": "local",
+    "confidence": 0.6,
+    "sufficient": false,
+    "query": "can u explain me the value function"
+  },
+  {
+    "source": "web",
+    "confidence": 0.2,
+    "sufficient": false,
+    "query": "can u explain me the value function"
+  }
+]
